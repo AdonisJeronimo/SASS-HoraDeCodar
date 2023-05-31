@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulo I - Introdução ao curso</title>
+</head>
+<body>
+    <h1>Introdução</h1>
+
+    <h2>O que é um pré-processador?</h2>
+    <ul>
+        <li>O pré-processador é um software que recebe uma entrada de dados e gera uma saída;</li>
+        <li>Geralmente modificando os dados de ma forma que possa ser aceita por outro software;</li>
+        <li>O SASS é um pré-processador de CSS;</li>
+        <li>Ele recebe funcionalidades avançadas que naõ são entendidas pelo CSS em si, mas é processado e transformado
+            em CSS puro.
+        </li>
+    </ul>
+
+    <h2>O que é SASS</h2>
+    <ul>
+        <li>
+            O SASS é um pré-processador de CSS que possui muitas funcionalidades que irão aumentar a nossa produtividade de código para o desenvolvimento web, oferecendo diversos recurso como variaveis, mixins, nesting, herança e muito mais. Varios projetos grandes no mercado utilizam o SASS, como o Bootstra. Com isso, entende-se que, com o SASS será possível escrevermos menos códigos e ainda sim, gerarmos um CSS de qualidade.
+        </li>
+    </ul>
+
+    <h2>Alguns recursos do SASS</h2>
+    <ul>
+        <li><b>Pré-processamento:</b> geração de código CSS otimizado e válido para os navegadores mais atuais;</li>
+        <li><b>Variáveis:</b> reaproveitamento de estilos em todo o projeto, resultando em uma facilidade maior de manutenção;</li>
+        <li><b>Nesting:</b> encadeamento de seletores de CSS;</li>
+        <li><b>Partials:</b> Divisão de responsabilidades no CSS;</li>
+        <li><b>Mixins:</b> especie de função para reaproveitamento de estilo</li>
+        <li><b>E muito mais.</b></li>
+    </ul>
+
+    <h2>Diferença entre SASS, SCSS e CSS</h2>
+    <ul>
+        <li>O <b>SASS e o SCSS são bem parecidos</b>, porém o SASS possui mais recursos e tem uma sintaxe mais simples;</li>
+        <li>Com o SASS é possivel pré-processar SCSS, ou seja, podemos escrever os dois;</li>
+        <li>Ambos tem o mesmo papel que é <b>trazer novas funcionalidades ao CSS;</b></li>
+        <li>No fim, todo o código gerado com ambos viram <b>CSS puro</b>, sendo assim, aceito pelos navegadores;</li>
+        <li><u>É possivel que futuramente essas funcionalidades de SASS e SCSS sejam incluidas diretamente no CSS.</u></li>
+    </ul>
+
+    <h2>Instalação de dependencias</h2>
+    <p>Para criar os projetos e rodar o SASS, precisamos apenas de Node.js e o npm. Obviamente, também é preciso usarmos um editor de código (que no meu caso é o VSCode).</p>
+    <p><u>Para instalar o Node.js, entraremos no site oficial e iremos baixar a versão mais recente LTS.</u></p>
+
+    <h2>Instalando SASS</h2>
+    <ul>
+        <li>Vamos instalar o SASS com o Node.js (npm) de forma global;</li>
+        <li>Para isso, utilizaremos o seguinte comando;</li>
+        <li>npm install -g sass</li>
+        <li>Para termos certeza que a instalação do SASS foi efetuada de forma correta, execute o comando:</li>
+        <li>sass --version</li>
+        <li>Isso resultará na versão do SASS instalada na máquina;</li>
+        <li>Agora podemos executar o SASS em qualquer projeto.</li>
+    </ul>
+
+    <h2>Instalando extensões SASS no VS Code</h2>
+    <ul>
+        <li>Para melhorar nossa experiência de programação em SASS, vamos instalar uma extensão no VSCode</li>
+        <li>O nome dela é <b>SASS</b> e está disponível gratuitamente no marketplace;</li>
+        <li>Teremos funcionalidades como: auto-complete, highloght de código, formatação e muito mais.</li>
+    </ul>
+
+    <h2>Primeiro Projeto SASS</h2>
+    <ul>
+        <li>Crie uma pasta;</li>
+        <li>Crie a pasta <b>sass</b> e <b>css</b>;</li>
+        <li>Crie o arquivo <b>index.html</b> (para consumir o CSS gerado pelo SASS);</li>
+        <li>Após gerarmos um código SASS, precisamos buildar o código para CSS e para isso, abriremos o terminal na pasta e colocaremos o seguinte comando:</li>
+        <li><b>sass sass/style.sass css/styles.css</b></li>
+        <li>Temos que <b>sass/style.sass</b> <u>é a pasta de origem do arquivo SASS</u> e <b>css/styles.css</b><u> é a pasta de saida</u> <b>onde o código SASS sera transformado em CSS puro;</b></li>
+        <li>Para que não seja necessario buildarmos o código toda vez que fizermos uma alteração no SASS, podemos rodar o seguinte comando:</li>
+        <li><b>sass —watch sass/style.sass:css/style.css</b></li>
+        <li>Com isso, toda vez que fizermos alguma modificação no SASS automaticamente será atualizado no CSS e no navegador(como o Live Server faz).</li>
+    </ul>
+
+    <h2>Como debugar código com o SASS</h2>
+    <p>O debug de SASS é muito simples, se errarmos algo no código o CSS não vai compilar corretamente, assim o Sass irá imprimir um texto no HTML com informações de onde erramos, para identificaremos o problema, corrgirmos e compilarmos novamente.</p>
+    
+</body>
+</html>
