@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 2 - Conceitos Fundamentais de SASS e SCSS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="sass/style.sass">
+</head>
+<body>
+    
+    <h1>Módulo 02</h1>
+
+    <h2>Diferença de sintaxe</h2>
+    <ul>
+        <li>Tanto o <b>SASS</b> quanto <b>SCSS</b> utilizam um pré-processadores do SASS, porém podemos optar pelo uso de alguma das duas sintaxes;</li>
+        <li>O SASS aceita sintaxe de <b>SCSS</b> e também a chamada <b>identada</b> (o nome identada é usado para se referir ao SASS, porem de uma forma técnica);</li>
+        <li>No SCSS pouco importa o uso dos espaçamentos no inicio do seletor;</li>
+        <li>A sintaxe do <b>SCSS</b> <u>é muito parecida com a do CSS normal</u>, ja a <b>identada</b> <u>suprime o uso de chaves e ponto e vírgula</u>;</li>
+        <li>O SCSS utiliza arquivos com extensão <b>.scss</b>;</li>
+        <li>Já a identada(SASS) utiliza arquivos com extensões <b>.sass</b>.</li>
+    </ul>
+
+    <h2>Comentários no SASS</h2>
+    <p>Os comentários no SASS tem algumas funcionalidades a mais que no CSS.</p>
+    <ul>
+        <li><b>// →</b> Não é incluso no CSS;</li> 
+        <li><b>/* →</b> É incluso no CSS;</li>
+        <li><b>/*! →</b> É incluso no CSS, até no modo de compressão;</li>
+    </ul>
+
+    <p>Também podemos interpolar valores (que seria inserir valores dinâmicos em conteudos estáticos) nos comentários, ex: #{1 + 3}</p>
+
+
+    <h2>Gerando CSS minificado a partir do SASS</h2>
+
+    <p>Podemos gerar CSS minificado facilmente a partir do SASS, com isso economizaremos armazenamento e recursos dos servidores, o que irá reduz custos e melhora o desempenho dos sistemas para o usuário;</p>
+    <p>Na saída do comando de watch, vamos mudar a extensão:</p>
+    <ul>
+        <li><b>DE:</b> style.css</li>
+        <li><b>PARA:</b> styles.min.css</li>
+    </ul>
+    <p>Ou seja, quando precisamos alterar o link do html para o style.min.css e quando dermos o comando no terminal ficará da seguinte forma:</p>
+    <p><b>sass --watch sass/style.sass:css/style.min.css --style compressed</b></p>
+
+    <div>
+        <h2>Módulos</h2>
+    <a href="/MODULO-01/01-Introducao-ao-curso/Index.html">Módulo 1</a>
+
+    </div>
+</body>
+</html>

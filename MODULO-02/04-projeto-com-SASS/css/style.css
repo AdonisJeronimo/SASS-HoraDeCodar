@@ -1,0 +1,28 @@
+@charset "UTF-8";
+/* Este comentário estara no CSS
+ *  Continuação do comentario
+ *  Não parece no modo de compressão
+ *  Não precisa fechar o comentario
+ *  interpolação 
+ *  120 */
+/*! Este comentario também sera incluido no CSS 
+ *  Até a no modo de compressão
+ *  não precisa fechar o comentario */
+.container {
+  background: #ddd;
+  padding: 20px;
+}
+.container #title {
+  background-color: #111;
+  color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+
+.container-bottom {
+  background-color: blue;
+  text-align: center;
+  padding: 50px;
+}
+
+/*# sourceMappingURL=style.css.map */
