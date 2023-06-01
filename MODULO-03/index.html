@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 03 - Regras de estilização</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="sass/style.sass">
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="title">Módulo 3</h1>
+
+    <h2 class="subtitle">Conhecendo o Nesting</h2>
+        <p class="description">Nesting, no contexto do SASS, é uma técnica que permite aninhar seletores CSS dentro de outros seletores, facilitando a escrita e organização do código. Com o nesting, você pode agrupar regras CSS relacionadas em um único bloco, evitando repetições e aumentando a legibilidade do código.</p>
+        <div class="content">
+            <div>
+                <p>EXEMPLO EM SCSS</p>
+                <img src="/assets/image/M3-nestingSCSS.png" alt="nesting em SCSS">
+            </div>
+
+          <div>
+            <p>EXEMPLO EM SCSS</p>
+            <img src="/assets/image/M3-nestingSASS.png" alt="nesting em SASS">
+
+          </div>
+        </div>
+        <p class="warning">Tome cuidado com o uso excessivo de nesting, pode confundir em vez de ajudar.</p>
+    </div>
+    
+
+    <h2 class="subtitle">Nesting com lista</h2>
+    <p class="description">
+        Quando falamos de listas no CSS não estamos nos referindo a listas ordernadas ou desordenadas, estamos nos referindo aos seletores unidos separados por vírgulas. Quando queremos aplicar o mesmo estilo para mais de um elemento no SASS, iremos usar o nesting e separar os elementos que terão um mesmo conjunto de estilo com vírgula. Com isso, o SASS irá entender que queremos selecionar mais de um elemento seguindo o padrão de aninhamento, isso serve tanto para os níveis superiores quanto para os níveis inferiores. No exemplo abaixo, mostro que body e main compartilharam das mesmas estilizações.
+    </p>
+    <img id="img-2" src="/assets/image/nestingList.png" alt="Nesting list">
+
+
+    <h2 class="subtitle">Nesting com combinators</h2>
+    <ol>
+        <li>Os símbolos de combinators (+,>,~) também podem ser utilizados com nesting;</li>
+        <li>O SASS consegue interpretar corretamente o estilo que cada elemento vai receber por meio das combinações.</li>
+    </ol>
+
+
+    <h2 class="subtitle">Parent selector</h2>
+    <ul>
+        <li>Parent selector é um seletor especial que serve para se referi ao <b>elemento externo/elemento pai</b>;</li>
+        <li>Utilizando o símbolo &;</li>
+        <li>Podemos criar hovers facilmente na mesma regra, por exemplo, sem precisar criar uma nova para o efeito;</li>
+    </ul>
+
+    <a id="linkHover" href="#">Clique em mim</a>
+
+
+    <h2 class="subtitle">Parent selector com sufixo</h2>
+    <p>Podemos utilizar o parent selector para adicionar sufixos também, desta forma criamos classes variantes e mais complexas do elemento alvo, Por exemplo botões diferentes:</p>
+
+    <button class="btn">Botão</button>
+    <button class="btn btn-sucess">Botão</button>
+    <button class="btn btn-danger">Botão</button>
+
+    <h2 class="subtitle">Placeholder selector</h2>
+    
+    <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut libero exercitationem, omnis mollitia aspernatur sapiente vero quis eum laborum placeat voluptates, odit eos quos necessitatibus dignissimos, tempora reprehenderit officia facilis?</p>
+    
+    <p class="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut libero exercitationem, omnis mollitia aspernatur sapiente vero quis eum laborum placeat voluptates, odit eos quos necessitatibus dignissimos, tempora reprehenderit officia facilis?</p>
+    
+    <p class="p3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut libero exercitationem, omnis mollitia aspernatur sapiente vero quis eum laborum placeat voluptates, odit eos quos necessitatibus dignissimos, tempora reprehenderit officia facilis?</p>
+
+    </div>
+
+    <a href="/MODULO-01/01-Introducao-ao-curso/Index.html">Módulo 1</a>
+    <a href="/MODULO-02/index.html">Módulo 2</a>
+    <a href="/MODULO-03/index.html">Módulo 3</a>
+</body>
+</html>

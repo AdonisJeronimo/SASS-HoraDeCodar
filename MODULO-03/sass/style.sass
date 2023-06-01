@@ -1,0 +1,105 @@
+body
+    background-color: #EEFFE6
+    padding: 2rem 10rem
+
+.container
+    text-align: center
+
+    .content
+        display: flex
+        justify-content: space-around
+        font-weight: bold
+        
+        img
+            height: 350px
+            width: 250px
+
+    .warning
+        color: red
+        font-weight: bold
+        text-decoration: underline 
+
+.title
+    font-size: 2rem
+    color: red
+
+.subtitle
+    color: blue
+
+.description
+    text-align: justify
+    color: green
+
+li
+    color: purple
+
+ul
+    > li
+        color: black
+
+#linkHover
+    display: block
+    width: 150px
+    text-align: center
+    text-decoration: none
+    color: green
+    transition: .5s ease
+    padding: 10px
+    border: 1px solid green
+
+    &:hover
+        background-color: green
+        color: white
+
+.spacing
+    padding: 150px
+
+.btn
+    padding: 10px 20px
+    border: 1px solid blue
+    color: #fff
+    background-color: blue
+    border-radius: 5px
+    cursor: pointer
+    margin: 5px
+    transition: 0.3s
+
+    &:hover
+        transform: scale(110%)
+    &-sucess
+        background-color: green
+        border-color: green
+    &-danger
+        background-color: red
+        border-color: red
+
+%placeholder
+    background-color: grey
+    padding: 10px
+    text-align: center
+    border-radius: 10px
+
+
+.p1
+    color: blue
+    font-size: 2rem
+    @extend %placeholder
+
+    &:hover
+        background-color: blue
+        color: grey
+        
+
+.p2
+    color: red
+    font-size: 1.5rem
+    @extend %placeholder
+
+.p3
+    color: white
+    font-size: 2rem
+    font-weight: bold
+    @extend %placeholder
+
+
+
