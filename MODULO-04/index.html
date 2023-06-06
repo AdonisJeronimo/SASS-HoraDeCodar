@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MÓDULO 4</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="sass/styles.sass">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Módulo 4</h1>
+
+        <h2 class="subtitle">Variáveis no SASS/SCSS</h2>
+        <p class="description">
+            O que são variaveis?</p>
+        <p class="description"> É um recurso para <b>salvar um valor na memória do computador</b> e utilizá-lo posteriormente em qualquer lugar do código. No SASS utilizamos o símbolo <b>$</b> para variáveis. Normalmente as variáveis em SASS são declaradas com um hífen:</p>
+        <p class="description"><b>$subtitle-color: blue</b></p>
+
+        <h2 class="subtitle">Escopo de variáveis</h2>
+        <p class="description">As variáveis declaradas fora de blocos podem ser acessadas em qualquer bloco. Já as variáveis declaradas em um bloco só podem ser acessadas pelo bloco e seus elementos filhos. <b>O modo mais comum de se declarar as variáveis no SASS é de forma global.</b></p>
+        <div class="global">
+            <p>TESTE</p>
+        </div>
+
+        <div class="bloco">
+            <p>TESTE</p>
+        </div>
+
+
+        <h2 class="subtitle">Shadowing</h2>
+        <p class="description">No contexto do SASS, o termo "Shadowing" refere-se a uma prática em que uma variável local dentro de um escopo local tem o mesmo nome de uma variável definida em um escopo global. Para utilizarmos esta pratica, é importante ter cuidado ao definir e utilizar variáveis em escopos diferentes para evitar problemas e garantir que o código funcione conforme o esperado.</p>
+
+
+        <h2 class="subtitle">Módulo de variáveis</h2>
+        <p class="description">Módulo de variaveis, refere-se a externalização das variaveis em um arquivo separado, sendo ele responsavel pelo conjunto de variaveis declaradas em nosso código, deixando nosso projeto mais organizado.</p>
+        <p>É uma boa prática no SASS iniciar os arquivos que não são os principais com um _ (underline). Portanto, o arquivo que conterá as variáveis será gerado dentro da pasta do SASS e terá o nome _variables.sass. No arquivo de estilos principal, podemos importar o arquivo de variáveis utilizando <b>@import</b>, fornecendo o nome do arquivo sem o underline e a extensão, dentro de aspas</p>
+        <p>EXEMPLO: @import 'variables'</p>
+
+
+
+        <h2 class="subtitle">Interpolação de valores</h2>
+
+
+
+    </div>
+
+    
+    <h2>Módulos</h2>
+    <a href="/MODULO-01/01-Introducao-ao-curso/Index.html">Módulo 1</a>
+    <a href="/MODULO-02/index.html">Módulo 2</a>
+    <a href="/MODULO-03/index.html">Módulo 3</a>
+    <a href="/MODULO-04/index.html">Módulo 4</a>
+    <a href="/MODULO-05/index.html">Módulo 5</a>
+    <a href="/MODULO-06/index.html">Módulo 6</a>
+    <a href="/MODULO-07/index.html">Módulo 7</a>
+    <a href="/MODULO-08/index.html">Módulo 8</a>
+</body>
+</html>

@@ -1,0 +1,30 @@
+@import 'variables'
+body
+    background-color: $body-color
+
+.subtitle
+    color: $subtitle-color
+
+p
+    margin: #{$mx + 10px}
+
+.global
+    width: 100%
+    height: 50px
+    border: 2px solid $border
+    background-color: $escopo-global
+
+
+.bloco
+    $escopo-bloco: yellow
+    $escopo-bloco-p: red
+    $border: white
+    margin-top: 2px
+    background-color: $escopo-bloco
+    border: 2px solid $border
+    width: 100%
+    height: 50px
+    
+    p
+        color: $escopo-bloco-p
+    
