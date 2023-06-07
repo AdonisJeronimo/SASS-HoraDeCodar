@@ -1,0 +1,37 @@
+.btn-partials {
+  background-color: #ddd;
+  color: #000;
+  padding: 12px 10px;
+  border-radius: 5px;
+  transition: 0.5s ease;
+}
+.btn-partials:hover {
+  border-radius: 10px;
+  transform: scale(110%);
+  background: red;
+  color: #000;
+}
+
+body {
+  background-color: grey;
+}
+
+.esp-menor {
+  padding: 10px;
+  margin: 10px;
+  background-color: red;
+}
+
+.esp-medio {
+  padding: 20px;
+  margin: 20px;
+  background-color: red;
+}
+
+.esp-maior {
+  padding: 30px;
+  margin: 30px;
+  background-color: red;
+}
+
+/*# sourceMappingURL=styles.css.map */

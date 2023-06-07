@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MÓDULO 5</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="sass/styles.sass">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Módulo 5</h1>
+
+        <h2 class="subtitle">Partials</h2>
+        <p class="description">Os partials são uma forma de dividir o código CSS em arquivos menores e mais organizados. Ela envolve o uso de arquivos parciais (partials) que contêm trechos de código CSS ou SASS reutilizáveis e, em seguida, são importados em um arquivo principal para compilação. 
+        </p>
+        <p class="description">Para criar um arquivo parcial, você precisa nomeá-lo com um prefixo de _ (underline) no início do nome do arquivo, por exemplo <b>_variables.scss</b>. Essa convenção de nomenclatura é uma convenção comum para identificar arquivos que não são os principais do projeto, sendo ele um partials que irá ter uma inclusão em outro arquivo.
+        Ao importar um arquivo parcial em um arquivo principal do SASS, você usa a diretiva <b>@import</b>. Aqui está um exemplo:</p>
+        <p class="description"><b>@import 'variables'</b></p>
+        <p><b>Abaixo iremos componentizar um botão com um partials</b></p>
+
+        <div >
+            <button class="btn-partials">Clique Aqui</button>
+        </div>
+
+        <h2 class="subtitle">Mixins</h2>
+        <p class="description">É uma funcionalidade que nos permite agrupar um conjunto de propriedades CSS em um bloco de código reutilizável. Com mixins, você pode definir estilos complexos ou repetitivos uma vez e usá-los em vários lugares do seu código. Para criar um mixin no SASS, você usa a diretiva <b>@mixin</b> seguida de um nome para o mixin e um bloco de código contendo as propriedades CSS desejadas. Aqui está um exemplo simples:</p>
+        <p class="description"><b>@mixin efeito-hover
+            propriedade
+            </b>
+        </p>
+        
+        
+        <div >
+            <button class="btn-partials">Botão 2</button>
+        </div>
+
+
+        <h2 class="subtitle">Mixins com parâmetros</h2>
+        <p class="description">Os mixins no SASS também podem receber parâmetros, permitindo torná-los ainda mais flexíveis e dinâmicos. Os parâmetros são definidos entre parênteses ao declarar o mixin e podem ser usados dentro do bloco de código do mixin. Caso passemos mais de um parâmetro, separamo-los por vírgulas. EXEMPLO:</p>
+
+        <div class="esp-menor">
+            <p>Teste</p>
+        </div>
+
+        <div class="esp-medio">
+            <p>Teste</p>
+        </div>
+
+        <div class="esp-maior">
+            <p>Teste</p>
+        </div>
+
+
+        <h2 class="subtitle">Parâmetros opcionais</h2>
+        <p class="description"></p>
+
+        <h2 class="subtitle">Parâmetros por nome</h2>
+        <p class="description"></p>
+
+
+        <h2 class="subtitle">Herança</h2>
+        <p class="description"></p>
+
+        <h2 class="subtitle">Calculos com SASS</h2>
+        <p class="description"></p>
+
+        <h2 class="subtitle">Funções</h2>
+        <p class="description"></p>
+
+        <h2 class="subtitle">Argumento padrão em função</h2>
+        <p class="description"></p>
+
+        <h2 class="subtitle">Argumento de função pelo nome</h2>
+        <p class="description"></p>
+
+        <h2 class="subtitle">Criando erros no SASS</h2>
+        <p class="description"></p>
+
+        <h2 class="subtitle">Gerando um warning</h2>
+        <p class="description"></p>
+
+        <h2 class="subtitle">Depuração de valores</h2>
+        <p class="description"></p>
+
+        <h2 class="subtitle">Estruturas condicionais</h2>
+        <p class="description"></p>
+
+        <h2 class="subtitle">Each no SASS</h2>
+        <p class="description"></p>
+
+        <h2 class="subtitle">For no SASS</h2>
+        <p class="description"></p>
+
+
+    </div>
+
+    
+    <h2>Módulos</h2>
+    <a href="/MODULO-01/01-Introducao-ao-curso/Index.html">Módulo 1</a>
+    <a href="/MODULO-02/index.html">Módulo 2</a>
+    <a href="/MODULO-03/index.html">Módulo 3</a>
+    <a href="/MODULO-04/index.html">Módulo 4</a>
+    <a href="/MODULO-05/index.html">Módulo 5</a>
+    <a href="/MODULO-06/index.html">Módulo 6</a>
+    <a href="/MODULO-07/index.html">Módulo 7</a>
+    <a href="/MODULO-08/index.html">Módulo 8</a>
+</body>
+</html>
