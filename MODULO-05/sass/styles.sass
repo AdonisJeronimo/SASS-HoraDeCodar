@@ -1,6 +1,8 @@
 @import 'variables'
 @import 'button'
 @import 'mixin'
+@import 'plugins'
+@import 'function'
 
 body
     background-color: grey
@@ -8,11 +10,36 @@ body
 .esp-menor
     @include espacamento(10px,10px)
     background-color: $bg-red
+    @include custom-border(solid,yellow)
 
 .esp-medio
     @include espacamento(20px,20px)
     background-color: $bg-red
+    @include custom-border(dotted,blue,5px)
+
 
 .esp-maior
     @include espacamento(30px,30px)
     background-color: $bg-red
+
+.teste-heranca
+    @extend %font-pattern
+
+.font-pequena
+   font-size: 15px
+   color: text-color(5)
+
+.font-media
+    font-size: 21px
+
+.um
+    border: custom-border-function()
+
+.dois
+    border: custom-border-function(1)
+
+.tres
+    border: custom-border-function(2)
+
+.quatro
+    border: custom-border-function(3)

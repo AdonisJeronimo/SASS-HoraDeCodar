@@ -12,6 +12,12 @@
   color: #000;
 }
 
+.teste-heranca {
+  font-size: 2rem;
+  line-height: 2rem;
+  text-transform: uppercase;
+}
+
 body {
   background-color: grey;
 }
@@ -20,18 +26,45 @@ body {
   padding: 10px;
   margin: 10px;
   background-color: red;
+  border: 1px solid yellow;
 }
 
 .esp-medio {
   padding: 20px;
   margin: 20px;
   background-color: red;
+  border: 5px dotted blue;
 }
 
 .esp-maior {
   padding: 30px;
   margin: 30px;
   background-color: red;
+}
+
+.font-pequena {
+  font-size: 15px;
+  color: red;
+}
+
+.font-media {
+  font-size: 21px;
+}
+
+.um {
+  border: 1px solid red;
+}
+
+.dois {
+  border: 1px solid red;
+}
+
+.tres {
+  border: 2px solid green;
+}
+
+.quatro {
+  border: 3px dotted gold;
 }
 
 /*# sourceMappingURL=styles.css.map */

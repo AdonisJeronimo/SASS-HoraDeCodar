@@ -54,44 +54,63 @@
 
 
         <h2 class="subtitle">Parâmetros opcionais</h2>
-        <p class="description"></p>
+        <p class="description">No SASS, você pode definir argumentos opcionais em mixins usando a sintaxe de atribuição de valor padrão aos parâmetros. Isso permite que você chame um mixin com ou sem fornecer um valor para o argumento opcional.</p>
+        <p>Por exemplo, se definirmos criarmos um mixin com nome de <i>custom-border</i> e passarmos os seguintes paramentros, $style,$color,$width:1px, estamos dizendo que caso nao seja passado nenhum valro ao parametro de largura, automaticamente ele usara seu valor opcional</p>
+        <p>Vale resaltar que por regra, os argumentos opcionais devem ficar depois dos obrigatorios.</p>
 
         <h2 class="subtitle">Parâmetros por nome</h2>
         <p class="description"></p>
 
 
         <h2 class="subtitle">Herança</h2>
-        <p class="description"></p>
+        <p class="teste-heranca">As heranças no SASS referem-se à capacidade de um seletor herdar as propriedades de outro seletor. Isso permite que você reutilize estilos e evite a repetição de código, facilitando a manutenção e a criação de estilos consistentes.</p>
+        <p class="teste-heranca">No SASS, a herança é feita usando o operador <b>@extend</b>. Com esse operador, você pode fazer com que um seletor herde todas as propriedades de outro seletor.</p>
+        
 
         <h2 class="subtitle">Calculos com SASS</h2>
-        <p class="description"></p>
+        <p class="description">O SASS oferece suporte a cálculos matemáticos básicos, permitindo que você execute operações aritméticas dentro do seu código SASS. Isso pode ser útil para calcular valores de propriedades CSS, como largura, altura, margem, etc.</p>
 
         <h2 class="subtitle">Funções</h2>
-        <p class="description"></p>
+        <p class="description">No SASS, você pode criar e usar funções para realizar cálculos, manipular valores e gerar estilos dinamicamente. As funções no SASS são semelhantes às funções em outras linguagens de programação e podem ser bastante úteis para criar código reutilizável.</p>
+        <p><b>Sintaxe</b>: @function nome(argumentos)</p>
+        <br>
+        <p class="font-pequena">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa veritatis voluptates tempore, vel minus aspernatur provident delectus, eveniet accusamus pariatur non natus. Quisquam quam doloribus deleniti velit ut sapiente ex.</p>
+        <p class="font-media">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa veritatis voluptates tempore, vel minus aspernatur provident delectus, eveniet accusamus pariatur non natus. Quisquam quam doloribus deleniti velit ut sapiente ex.</p>
 
-        <h2 class="subtitle">Argumento padrão em função</h2>
-        <p class="description"></p>
+        <h2 class="subtitle">Argumento padrão em opcionais</h2>
+        <p class="description">Como nos mixins as funções também podem ter argumentos opcionais, onde colocamos o valor inicial nos mesmo e assim como nos mixins, os valores opcionais devem ficar à direita dos obrigatórios.
+
+        Sintaxe: `@function test($color,$px:10px)`</p>
+
+        <div><p class="um">test</p></div>
+        <div><p class="dois">test2</p></div>
+        <div><p class="tres">test3</p></div>
+        <div><p class="quatro">test4</p></div>
 
         <h2 class="subtitle">Argumento de função pelo nome</h2>
         <p class="description"></p>
 
         <h2 class="subtitle">Criando erros no SASS</h2>
-        <p class="description"></p>
+        <p class="description">Podemos gerar um erro com o SASS. Uma situação interessante é: quando criamos uma função e ela precisa de alguns valores mínimos para argumentos, então caso o programador não insira corretamente isso fará com que dispare um erro com o @error. Podemos interpolar valores na mensagem também.</p>
 
         <h2 class="subtitle">Gerando um warning</h2>
-        <p class="description"></p>
+        <p class="description">Podemos gerar um aviso com o SASS. A situação pode ser a mesma que a do erro, mas este método é menos invasivo, ele não para a alicação, apenas mostra no console. Então caso o programador não insira corretamente, disparamos um erro com o @warn.</p>
 
         <h2 class="subtitle">Depuração de valores</h2>
-        <p class="description"></p>
+        <p class="description">No SASS, você pode usar a diretiva @debug para imprimir informações de depuração no console durante a compilação. A diretiva @debug é útil para exibir valores de variáveis, mensagens informativas ou qualquer outra informação relevante que possa ajudar na depuração e solução de problemas.</p>
 
         <h2 class="subtitle">Estruturas condicionais</h2>
-        <p class="description"></p>
+        <p class="description">Podemos criar uma estrutura de condição no SASS, utilizando o @if e o @else, assim como também podemos usar o @else if. Estas regras funcionam como em outras linguagens de programação.</p>
 
         <h2 class="subtitle">Each no SASS</h2>
-        <p class="description"></p>
+        <p class="description">Podemos criar um estrutura de repetição em listas no SASS, utilizando o `@each` . Podemos repetir uma criação de calsse n vezes, por exemplo, veja a sintaxe(onde $size é a lista de valores):
+
+            `@each $size in $size`</p>
 
         <h2 class="subtitle">For no SASS</h2>
-        <p class="description"></p>
+        <p class="description">Podemos criar um estrutura de repetição em listas no SASS, utilizando o `@for`. Podemos repetir quantas vezes for necessario, por medio de condições. por exemplo, veja a sintaxe:
+
+            `@for $i from 1 through 3` (repetir de 1 até chegar a 3)</p>
 
 
     </div>
