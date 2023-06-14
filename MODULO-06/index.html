@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MÓDULO 6</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Módulo 6</h1>
+
+        <h2 class="subtitle">Diretiva</h2>
+        <p class="description">A diretiva @use é uma funcionalidade introduzida no SASS (a partir do final de 2019) para importar módulos CSS e criar namespaces. Essa diretiva, esta substituindo gradativamente a diretiva @import nas versões mais recentes do SASS. Aqui estão algumas razões pelas quais é recomendado usar @use em vez de @import:</p>
+        <ol>
+            <li>Escopo mais seguro e controle de nomenclatura: Com o @use, os estilos, variáveis, mixins e funções importados são encapsulados em um namespace. Isso ajuda a evitar conflitos de nomeação e torna mais fácil entender de onde vêm as declarações importadas. O @use promove um escopo mais seguro para evitar sobrescrever acidentalmente estilos ou variáveis em diferentes partes do código.</li>
+            <li>Melhor organização e modularidade: O @use incentiva uma abordagem mais modular para a organização do código CSS. Você pode importar apenas os módulos específicos que precisa, em vez de importar um arquivo inteiro. Isso melhora a manutenção e a legibilidade do código, pois você pode ver facilmente quais módulos estão sendo usados em cada arquivo.</li>
+            <li>Resolução de dependências mais robusta: O @use resolve automaticamente as dependências entre módulos, evitando problemas de ordem de importação. Isso significa que você não precisa se preocupar com a ordem em que os módulos são importados, pois o SASS cuida disso automaticamente.</li>
+            <li>Carregamento assíncrono e parcial: O @use carrega módulos assincronamente por padrão, o que pode melhorar o desempenho do compilador SASS. Além disso, o @use permite a importação parcial, o que significa que você pode importar apenas as partes específicas de um módulo que precisa, reduzindo a quantidade de CSS gerado.</li>
+            <li>Evitar duplicação e problemas de cascata: Com o @use, os estilos importados não são incluídos novamente se você já os importou em um arquivo anterior. Isso evita a duplicação de estilos e problemas de cascata que podem ocorrer ao importar o mesmo arquivo várias vezes.</li>
+            <li>Melhor suporte para bibliotecas externas: O @use fornece suporte nativo para bibliotecas externas, permitindo importar módulos diretamente de bibliotecas instaladas via gerenciador de pacotes. Isso facilita a integração de bibliotecas externas em seu projeto.</li>
+            <li> Depreciação futura do @import: O @import foi depreciado no SASS e está sendo gradualmente removido em versões futuras. Portanto, é uma prática recomendada migrar para o @use para garantir a compatibilidade e se beneficiar das melhorias e recursos adicionais.</li>
+        </ol>
+
+        <h2 class="subtitle">Instalando o LiveServer</h2>
+        <p class="description">
+            O Live Server é uma extensão do Visual Studio Code que permite executar um servidor de desenvolvimento local para projetos web. Com essa extensão, você pode facilmente abrir um arquivo HTML, CSS, JavaScript ou qualquer outro arquivo da web e visualizá-lo no navegador em tempo real, sem precisar recarregar a página manualmente a cada alteração.</p>
+
+        <h2 class="subtitle">Arquitetura SMACSS</h2>
+        <p class="description">SMACSS (Scalable and Modular Architecture for CSS) é uma metodologia de organização e estruturação de código CSS desenvolvida por Jonathan Snook. Ela é projetada para tornar o código CSS mais modular, escalável e fácil de manter.</p>
+        <p class="description">A estrutura SMACSS é baseada em cinco categorias principais para organizar os estilos:</p>
+        <ol>
+            <li>Base: Essa categoria contém estilos de nível mais baixo, como definições de estilos para elementos HTML (por exemplo, estilos para h1, p, a, etc.) e regras gerais de formatação que se aplicam a todo o projeto. Os estilos da categoria Base geralmente não têm classes ou seletores específicos, pois são aplicados globalmente.</li>
+            <li>Layout: Aqui, você define estilos para estruturas de layout, como contêineres, grades, áreas de cabeçalho e rodapé, barras laterais etc. Esses estilos ajudam a estabelecer a estrutura visual do seu projeto e costumam ter classes específicas para identificar os elementos.</li>
+            <li>Module: Essa categoria abrange os componentes individuais do seu projeto, como menus, botões, formulários, caixas de diálogo etc. Cada módulo deve ser encapsulado em uma classe específica para torná-lo independente e reutilizável em todo o projeto.</li>
+            <li>State: Essa categoria inclui estilos para estados específicos de um elemento, como hovers, ativos, focos, desabilitados etc. Os estilos de estado são aplicados aos elementos com base em eventos ou interações do usuário.</li>
+            <li>Theme: Essa categoria aborda a personalização visual do projeto para diferentes temas ou variações. Ela permite que você defina estilos específicos para diferentes aparências do seu projeto, como tema claro, tema escuro etc.</li>
+        </ol>
+        <p class="description">A estrutura SMACSS encoraja a separação clara de responsabilidades entre as categorias, tornando mais fácil a manutenção e o ajuste fino do código CSS. Ela também promove o uso de classes e seletores específicos para evitar conflitos e melhorar a reutilização do código.</p>
+        <p class="description">No entanto, é importante lembrar que a estrutura SMACSS é uma abordagem flexível e pode ser adaptada às necessidades do projeto.</p>
+
+        <h2 class="subtitle">Arquivo principal da aplicação</h2>
+        <p class="description">O arquivo principal vai vai apenas realizar importações, não vamos adicionar estilos a ele. Podemos chamá-lo de main.sass ou app.sass. </p>
+        <p class="description">As pastas de outros módulos iniciam com números, por exemplo: 0-plugins.</p>
+
+        <h2 class="subtitle">Estrutura de pastas</h2>
+        <ul>
+            <li>plugins: Frameworks ou códigos de terceiros.</li>
+            <li>base: Pasta para estilos básicos e de nível mais baixo, como reset de estilos, definições de tipografia e utilitários.</li>
+            <li>layouts: Pasta para estilos de layout, como cabeçalho, rodapé, barras laterais, etc.</li>
+            <li>modules: componesntes das páginas.</li>
+            <li>themes: Pasta para estilos relacionados a diferentes temas ou variações do design.</li>
+        </ul>
+
+        <h2 class="subtitle">Arquivo principal dos subdiretórios</h2>
+        <p class="description">texto</p>
+
+        <h2 class="subtitle">Base</h2>
+        <p class="description">texto</p>
+
+        <h2 class="subtitle">Layouts</h2>
+        <p class="description">texto</p>
+
+        <h2 class="subtitle">Modules</h2>
+        <p class="description">texto</p>
+ 
+
+
+    </div>
+
+    
+    <h2>Módulos</h2>
+    <a href="/MODULO-01/01-Introducao-ao-curso/Index.html">Módulo 1</a>
+    <a href="/MODULO-02/index.html">Módulo 2</a>
+    <a href="/MODULO-03/index.html">Módulo 3</a>
+    <a href="/MODULO-04/index.html">Módulo 4</a>
+    <a href="/MODULO-05/index.html">Módulo 5</a>
+    <a href="/MODULO-06/index.html">Módulo 6</a>
+    <a href="/MODULO-07/index.html">Módulo 7</a>
+    <a href="/MODULO-08/index.html">Módulo 8</a>
+</body>
+</html>
