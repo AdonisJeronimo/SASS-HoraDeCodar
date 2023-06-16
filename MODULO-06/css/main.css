@@ -1,3 +1,65 @@
+body {
+  background-color: grey;
+}
 
+main {
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 16px;
+  color: blue;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  background-color: #000;
+  color: #fff;
+  padding: 1rem;
+  transition: 0.3s;
+}
+.subtitle:hover {
+  background-color: #fff;
+  color: #000;
+  transform: scale(101%);
+}
+
+#navbar ul {
+  display: flex;
+  background-color: #000;
+  height: 50px;
+  align-items: center;
+  justify-content: space-around;
+  text-decoration: none;
+}
+#navbar li {
+  list-style: none;
+}
+#navbar li a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+#navbar li a:hover {
+  color: blue;
+}
+
+.btn {
+  padding: 10px 15px;
+  background-color: orange;
+  color: #fff;
+  border-radius: 10px;
+  text-transform: uppercase;
+  transition: 0.3s ease-in-out;
+}
+.btn:hover {
+  background-color: #fff;
+  color: orange;
+  cursor: pointer;
+}
 
 /*# sourceMappingURL=main.css.map */
