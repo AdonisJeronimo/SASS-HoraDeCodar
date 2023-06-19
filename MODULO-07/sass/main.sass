@@ -1,0 +1,31 @@
+@use '2-layouts/layounts.sass'
+@use '3-modules/modules.sass'
+@use 'sass:map'
+$a: 10
+
+@debug $a
+@debug $a + 10px
+@debug 30px + 10px
+// @debug 30px + 10rem // incompativel
+// @debug 30px + 10% // incompativel
+
+$str: "Roboto"
+$str2: Roboto
+
+@debug $str == $str2 //true 
+@debug $str + $str2 //RobotoRoboto
+
+$nome-da-fonte: "Open"
+$var1: "Sans"
+$var2: "Teste"
+
+@debug $nome-da-fonte + " " + $var1
+@debug $nome-da-fonte + " " + $var2
+
+$font-weights: ("regular":400,"bold":700, "black":900)
+
+
+p
+    font-family: $nome-da-fonte + " " + $var1
+    font-weight: map.get($font-weights, "black")
+

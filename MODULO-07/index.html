@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MÓDULO 7</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <ul>
+                <li>
+                    <a href="/MODULO-01/01-Introducao-ao-curso/Index.html">Módulo 1</a>
+                </li>
+                <li>
+                    <a href="/MODULO-02/index.html">Módulo 2</a>
+                </li>
+                <li>
+                    <a href="/MODULO-03/index.html">Módulo 3</a>
+                </li>
+                <li>
+                    <a href="/MODULO-04/index.html">Módulo 4</a>
+                </li>
+                <li>
+                    <a href="/MODULO-05/index.html">Módulo 5</a>
+                </li>
+                <li>
+                    <a href="/MODULO-06/index.html">Módulo 6</a>
+                </li>
+                <li>
+                    <a href="/MODULO-07/index.html">Módulo 7</a>
+                </li>
+                <li>
+                    <a href="/MODULO-08/index.html">Módulo 8</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1 class="title">Módulo 7</h1>
+
+            <h2 class="subtitle">Números</h2>
+            <ul>
+                <li>Os números em SASS são compostos por duas partes: o NÚMERO e a UNIDADE.</li>
+                <li>EXEMPLO: 100% - 100 NÚMERO - % UNIDADE.</li>
+                <li>Algumas unidades são INCOMPATÍVEIS, como REM e PX.</li>
+                <li>A precisão de números vai até 10 CASAS.</li>
+            </ul>
+
+            <h2 class="subtitle">Strings</h2>
+            <ul>
+                <li>String são os TEXTOS que escrevemos.</li>
+                <li>As strings são inseridas ENTRE ASPAS e também SEM ASPAS.</li>
+                <li>"Roboto"(com aspas), hidden (sem aspas).</li>
+                <li>Podemos INTERPOLAR valores em string.</li>
+                <li>Podemos CONCATENAR strings com +.</li>
+            </ul>
+
+            <h2 class="subtitle">Cores</h2>
+            <ul>
+                <li>A cor é considera um tipo de dado em SASS</li>
+                <li>Podemos inserir em HEXADECIMAL, NOME DA COR, RBG, HSL.</li>
+                <li>Todos estes formatos também são aceitos em CSS.</li>
+            </ul>
+
+            <h2 class="subtitle">Lista</h2>
+            <p class="description">No SASS, as listas são estruturas de dados que permitem agrupar vários valores relacionados em uma única entidade (são como os arrays). Uma lista é uma sequência ordenada de valores separados por vírgulas.</p>
+            <p class="description">As listas podem conter diferentes tipos de valores, como números, strings, variáveis ou até mesmo outras listas. Elas são usadas para armazenar conjuntos de valores relacionados, como uma lista de cores, uma lista de tamanhos de fonte, uma lista de propriedades CSS, entre outros.</p>
+            <p class="description">As listas no SASS oferecem algumas funcionalidades e recursos úteis. Você pode acessar elementos específicos da lista usando a notação de índice, onde o primeiro elemento tem o índice 1. Por exemplo, para acessar o segundo valor da lista $colors, você usaria $colors[2].</p>
+
+            <h2 class="subtitle">Maps</h2>
+            <ul>
+                <li>Os maps em SASS são como OBJETOS.</li>
+                <li>Declaramos entre parênteses e cada item precisa de uma <b>chave e valor.</b></li>
+                <li>SINTAXE: $map: ("chave":1,"teste":50)</li>
+                <li>Podemos também utilizar maps com estruturas de repetição.</li>
+                <li>Para usarmos o map, precisamos usar </li>
+            </ul>
+
+            <h2 class="subtitle">Booleans</h2>
+            <ul>
+                <li>Os booleanos são representados por TRUE e FALSE.</li>
+                <li>Toda expressao lógica retonar um verdadeiro ou falso.</li>
+                <li>Por exemplo: 10 > 2 (true)</li>
+                <li>Em if’s no SASS podemos obvservar a utilização dos booleanos.</li>
+            </ul>
+
+            <h2 class="subtitle">Igualdade e Diferença</h2>
+            <ul>
+                <li>Caso haja a necessidade de comparar valores, se são iguais ou diferentes, podemos utilizar == ou ! = (junto).</li>
+                <li>veja um exemplo:</li>
+                <ul>
+                    <li>@debug 100px ≠ 10rem // true</li>
+                    <li>@debug “Helvetica” == Helvetica // true</li>
+                </ul>
+                <li>Os resultados de operações são sempre booleanos.</li>
+            </ul>
+
+            <h2 class="subtitle">Maior ou Menor</h2>
+            <ul>
+                <li>Caso haja a necessidade de comprar valores, se seão MAIORES OU MENORES, podemos utilizar < ou >.</li>
+                <li>Veja um exemplo:</li>
+                <ul>
+                    <li>@debug 100 > 20 // true</li>
+                </ul>
+                <li>Os resultados de operações são sempre BOOLEANOS.</li>
+                <li>Podemos adicionar um igual para rtambém verificar a iguldade, ex: >=</li>
+            </ul>
+
+            <h2 class="subtitle">Operadores matemáticos</h2>
+            <ul>
+                <li>Os operadoers numericos </li>
+                <ul>
+                    <li>+,-,*,/,%</li>
+                </ul>
+                <li>Podemos realizar cálculos com os mesmo.</li>
+                <li>Tome cuidado com a compatibilidade de valores.</li>
+                <li>Contas entre parênteses também funcionam em SASS.</li>
+            </ul>
+    </main>
+</body>
+
+</html>

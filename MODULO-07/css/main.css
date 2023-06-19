@@ -1,0 +1,40 @@
+#navbar ul {
+  display: flex;
+  background-color: #000;
+  height: 50px;
+  align-items: center;
+  justify-content: space-around;
+  text-decoration: none;
+}
+#navbar li {
+  list-style: none;
+}
+#navbar li a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+#navbar li a:hover {
+  color: blue;
+}
+
+.btn {
+  padding: 10px 15px;
+  background-color: orange;
+  color: #fff;
+  border-radius: 10px;
+  text-transform: uppercase;
+  transition: 0.3s ease-in-out;
+}
+.btn:hover {
+  background-color: #fff;
+  color: orange;
+  cursor: pointer;
+}
+
+p {
+  font-family: "Open Sans";
+  font-weight: 900;
+}
+
+/*# sourceMappingURL=main.css.map */
