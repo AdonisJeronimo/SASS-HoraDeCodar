@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 8</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <ul>
+                <li>
+                    <a href="/MODULO-01/01-Introducao-ao-curso/Index.html">Módulo 1</a>
+                </li>
+                <li>
+                    <a href="/MODULO-02/index.html">Módulo 2</a>
+                </li>
+                <li>
+                    <a href="/MODULO-03/index.html">Módulo 3</a>
+                </li>
+                <li>
+                    <a href="/MODULO-04/index.html">Módulo 4</a>
+                </li>
+                <li>
+                    <a href="/MODULO-05/index.html">Módulo 5</a>
+                </li>
+                <li>
+                    <a href="/MODULO-06/index.html">Módulo 6</a>
+                </li>
+                <li>
+                    <a href="/MODULO-07/index.html">Módulo 7</a>
+                </li>
+                <li>
+                    <a href="/MODULO-08/index.html">Módulo 8</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1 class="title">Módulo 7</h1>
+
+            <h2 class="subtitle">Módulo COLORS</h2>
+            <p>O módulo de cores no SASS deve ser importado com o @use ‘sass:list’ e ele fornece várias funcionalidades para trabalhar com cores de forma mais conveniente. Ele inclui uma variedade de funções embutidas que permitem criar, manipular e combinar cores de maneira flexível. Como por exemplo:</p>
+            <ul>
+                <li>color.adjust: Aumenta ou diminui alguma propriedade da cor.</li>
+                <li>color.green: Retorna o quanto de verde tem uma cor.</li>
+                <li>color.scale: Pode deixar uma cor mais clara ou escura.</li>
+                <li>color.invert: Interte uma cor.</li>
+            </ul>
+
+            <h2 class="subtitle">Módulo COLORS II</h2>
+            <p>Algumas das manipulações mais usadas.</p>
+            <ul>
+                <li>lighten($color, $amount): Clareia a cor especificada pelo valor indicado. O parâmetro $amount representa a porcentagem de clareamento.</li>
+                <li>darken($color, $amount): Escurece a cor especificada pelo valor indicado. O parâmetro $amount representa a porcentagem de escurecimento.</li>
+                <li>saturate($color, $amount): Aumenta a saturação da cor especificada pelo valor indicado. O parâmetro $amount representa a porcentagem de aumento da saturação.</li>
+                <li>desaturate($color, $amount): Diminui a saturação da cor especificada pelo valor indicado. O parâmetro $amount representa a porcentagem de diminuição da saturação.</li>
+                <li>adjust-hue($color, $degrees): Altera o matiz da cor especificada em um determinado ângulo. O parâmetro $degrees representa o ângulo de rotação do matiz.</li>
+                <li>mix($color1, $color2, $weight): Combina duas cores especificadas, criando uma nova cor. O parâmetro $weight determina a proporção das duas cores na mistura.</li>
+            </ul>
+            
+            <h2 class="subtitle">Módulo LIST</h2>
+            <p>O módulo de list é importado utilizando o **@use ‘sass:list’** e ele oferece funcionalidades para trabalhar com listas de valores. Ele inclui várias funções embutidas que permitem manipular, acessar e transformar listas de forma conveniente.Algumas das principais funcionalidades do módulo de listas no SASS são:</p>
+            <ul>
+                <li>length($list): Retorna o comprimento (número de itens) de uma lista.</li>
+                <li>nth($list, $n): Retorna o valor na posição especificada $n em uma lista.</li>
+                <li>index($list, $value): Retorna a posição do valor especificado $value em uma lista</li>
+                <li>join($list1, $list2, $separator): Combina duas listas em uma única lista. O parâmetro opcional $separator especifica o separador a ser usado entre os itens.</li>
+                <li>append($list, $value, $separator): Adiciona um valor ao final de uma lista. O parâmetro opcional $separator especifica o separador a ser usado entre os itens.</li>
+                <li>zip($lists...): Combina várias listas em uma única lista, agrupando os valores correspondentes de cada lista em uma sublista.</li>
+            </ul>
+            <p>Essas são apenas algumas das funcionalidades oferecidas pelo módulo de listas no SASS. Ele permite a manipulação eficiente de conjuntos de valores relacionados, como cores, tamanhos, propriedades CSS, entre outros. Com as funções do módulo de listas, você pode acessar itens específicos, combinar listas, adicionar valores e realizar várias operações em listas no seu código SASS.</p>
+            
+            
+            <h2 class="subtitle">Módulo MAP</h2>
+            <ul>
+                <li>Criação de mapas: Você pode criar mapas usando a função map() e especificando pares chave-valor. Por exemplo: $map: (chave1: valor1, chave2: valor2, chave3: valor3).</li>
+                <li>Acesso aos valores: É possível acessar os valores em um mapa usando a função map-get(), passando o nome do mapa e a chave desejada. Por exemplo: map-get($map, chave1) retorna o valor associado à chave1 no mapa.</li>
+                <li>Atualização de valores: Você pode atualizar um valor existente em um mapa usando a função map-merge(), que combina dois mapas. Por exemplo: $mapAtualizado: map-merge($mapExistente, (chave1: novoValor)).</li>
+                <li>Verificação de existência de chave: A função map-has-key() verifica se uma chave específica está presente em um mapa. Ela retorna true se a chave existir e false caso contrário.</li>
+                <li>Iteração em mapas: O SASS permite percorrer um mapa usando a diretiva @each. Você pode iterar sobre as chaves e valores do mapa e realizar operações em cada par.</li>
+            </ul>
+            
+            <h2 class="subtitle">Módulo MATH</h2>
+            <p>O módulo Math no SASS fornece uma série de funções matemáticas embutidas que permitem realizar cálculos e operações matemáticas em estilos. Ele permite que você execute operações matemáticas diretamente no seu código SASS, facilitando o cálculo de valores, tamanhos e propriedades relacionadas.Algumas das funções matemáticas disponíveis no módulo Math do SASS incluem:</p>
+            <ul>
+                <li>abs($number): Retorna o valor absoluto de um número.</li>
+                <li>ceil($number): Arredonda um número para cima para o próximo número inteiro.</li>
+                <li>floor($number): Arredonda um número para baixo para o número inteiro anterior.</li>
+                <li>round($number): Arredonda um número para o número inteiro mais próximo.</li>
+                <li>min($numbers...): Retorna o valor mínimo entre vários números.</li>
+                <li>max($numbers...): Retorna o valor máximo entre vários números.</li>
+                <li>random(): Gera um número aleatório entre 0 e 1.</li>
+            </ul>
+            <p>Essas são apenas algumas das funções matemáticas disponíveis no módulo Math do SASS. Elas permitem que você realize operações matemáticas avançadas, como arredondamento, cálculos de valor absoluto, mínimo e máximo, entre outros. O uso dessas funções no seu código SASS torna mais fácil e eficiente lidar com cálculos e manipulação de valores numéricos.</p>
+            
+            <h2 class="subtitle">Módulo META</h2>
+            <p>Quando você usa **`@use 'sass:meta'`**, está importando o namespace **`meta`** do SASS. O namespace **`meta`** contém variáveis e funções internas do SASS que podem ser usadas para acessar informações e metadados relacionados ao ambiente do SASS.Algumas das funcionalidades que podem ser acessadas através do namespace **`meta`** são:</p>
+            <ul>
+                <li>meta.module-variables($module): Retorna uma lista de variáveis definidas em um módulo específico.</li>
+                <li>meta.module-functions($module): Retorna uma lista de funções definidas em um módulo específico.</li>
+                <li>meta.inspect($value): Retorna uma representação em string de um valor, útil para depuração e visualização de informações.</li>
+            </ul>
+            <p>Essas são apenas algumas das funcionalidades disponíveis através do namespace meta. Elas permitem acessar e explorar informações sobre os módulos e elementos do SASS, como variáveis e funções, durante o processo de compilação.</p>
+            <p>No entanto, é importante observar que o uso do namespace meta é geralmente avançado e não é recomendado para o uso comum no desenvolvimento de estilos. É mais útil em casos específicos em que você precisa acessar informações internas do SASS ou realizar tarefas mais avançadas relacionadas à manipulação do ambiente do SASS.</p>
+            
+            <h2 class="subtitle">Módulo STRING</h2>
+            <p>O módulo de strings do SASS fornece funcionalidades para manipulação de strings, permitindo realizar operações e transformações em valores de texto. Com o módulo de strings, você pode realizar tarefas como concatenação, formatação, extração de partes e manipulação de strings de forma conveniente.Algumas das funcionalidades disponíveis no módulo de strings do SASS são:</p>
+            <ul>
+                <li>str-length($string): Retorna o comprimento de uma string, ou seja, o número de caracteres que ela contém.</li>
+                <li>str-insert($string, $insert, $index): Insere uma string $insert dentro de outra string $string em uma posição específica $index.</li>
+                <li>str-index($string, $substring): Retorna a posição da primeira ocorrência de $substring dentro de $string.</li>
+                <li>str-slice($string, $start, $end): Extrai uma parte específica de uma string, começando do índice $start até o índice $end (opcional).</li>
+                <li>to-upper-case($string): Converte uma string para letras maiúsculas.</li>
+                <li>to-lower-case($string): Converte uma string para letras minúsculas.</li>
+                <li>str-join($strings, $separator): Combina várias strings em uma única string, separadas por um $separator (opcional).</li>
+            </ul>
+            <p>Essas são apenas algumas das funcionalidades oferecidas pelo módulo de strings no SASS. Elas permitem que você manipule e transforme valores de texto de forma flexível e eficiente dentro do seu código SASS.</p>
+            
+        </div>
+    </main>
+</body>
+</html>

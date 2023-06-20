@@ -1,0 +1,39 @@
+@use 'sass:color'
+@use 'sass:list'
+
+$color-adjust: color.adjust(#6B717F, $red:50)
+    
+#navbar
+    ul
+        display: flex
+        background-color: #000
+        height: 50px
+        align-items: center
+        justify-content: space-around
+        text-decoration: none
+
+    li
+        list-style: none
+
+        a
+            color: #fff
+            text-decoration: none
+            transition: .3s
+
+            &:hover
+                color: blue
+
+.title
+    color: $color-adjust
+
+$lista: 10px, 20px, 30px
+
+@debug lista
+
+$lista: list.append($lista, 40px)
+
+@debug lista
+@debug list.index($lista,20px)
+
+
+

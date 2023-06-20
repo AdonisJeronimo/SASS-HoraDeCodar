@@ -1,0 +1,25 @@
+#navbar ul {
+  display: flex;
+  background-color: #000;
+  height: 50px;
+  align-items: center;
+  justify-content: space-around;
+  text-decoration: none;
+}
+#navbar li {
+  list-style: none;
+}
+#navbar li a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+#navbar li a:hover {
+  color: blue;
+}
+
+.title {
+  color: #9d717f;
+}
+
+/*# sourceMappingURL=styles.css.map */
