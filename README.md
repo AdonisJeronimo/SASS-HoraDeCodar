@@ -1,4 +1,4 @@
-# Curso de SASS - Hora de Codar | ![GitHub](https://img.shields.io/badge/Status-%20Estudando-orange)
+# Curso de SASS - Hora de Codar | ![GitHub](https://img.shields.io/badge/Status-Finished-green/?style=for-the-badge)
 
 ## Descrição do Curso
 
